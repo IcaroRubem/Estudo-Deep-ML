@@ -31,3 +31,21 @@ Documentando meus estudos e aprendizados no [Deep ML](https://www.deep-ml.com/)
   def modulo(u):
     return sqrt(sum(pow(a, 2) for a in u))
   ```
+
+> Matrix Basics
+- Transposição
+  `Teste`
+
+  ```python
+  def transposicao(m):
+  at = []
+
+  i = 0
+  for i in range(len(m[0])):
+    s = []
+    for d in m:
+      s.append(d[i])
+    at.append(s)
+
+  print(at)
+  ```
