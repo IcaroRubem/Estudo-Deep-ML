@@ -37,15 +37,12 @@ Documentando meus estudos e aprendizados no [Deep ML](https://www.deep-ml.com/)
   `Teste`
 
   ```python
-  def transposicao(m):
-    at = []
-  
-    i = 0
-    for i in range(len(m[0])):
-      s = []
-      for d in m:
-        s.append(d[i])
-      at.append(s)
-  
-    print(at)
+  def transposicao(b):
+    return [x for x in zip(*b)]
+  ```
+- Multiplicação
+
+  ```python
+  def multiplicacao(a, b):
+    return [[sum(c*d for c, d in zip(x, y)) for x in zip(*b)] for y in a]
   ```
